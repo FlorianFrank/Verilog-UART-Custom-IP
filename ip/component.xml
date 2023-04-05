@@ -18,7 +18,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>e5da25ad</spirit:value>
+            <spirit:value>0c105831</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -34,7 +34,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>e5da25ad</spirit:value>
+            <spirit:value>0c105831</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -55,6 +55,32 @@
     </spirit:views>
     <spirit:ports>
       <spirit:port>
+        <spirit:name>clk</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>start</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
         <spirit:name>value</spirit:name>
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
@@ -62,32 +88,6 @@
             <spirit:left spirit:format="long">7</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
-          <spirit:wireTypeDefs>
-            <spirit:wireTypeDef>
-              <spirit:typeName>wire</spirit:typeName>
-              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
-              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
-            </spirit:wireTypeDef>
-          </spirit:wireTypeDefs>
-        </spirit:wire>
-      </spirit:port>
-      <spirit:port>
-        <spirit:name>start_signal</spirit:name>
-        <spirit:wire>
-          <spirit:direction>in</spirit:direction>
-          <spirit:wireTypeDefs>
-            <spirit:wireTypeDef>
-              <spirit:typeName>wire</spirit:typeName>
-              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
-              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
-            </spirit:wireTypeDef>
-          </spirit:wireTypeDefs>
-        </spirit:wire>
-      </spirit:port>
-      <spirit:port>
-        <spirit:name>clk_100MHZ</spirit:name>
-        <spirit:wire>
-          <spirit:direction>in</spirit:direction>
           <spirit:wireTypeDefs>
             <spirit:wireTypeDef>
               <spirit:typeName>wire</spirit:typeName>
@@ -194,21 +194,8 @@
       <spirit:file>
         <spirit:name>src/uart_top_module.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_0783fec2</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_a6b2c0bc</spirit:userFileType>
         <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>../custom_uart.srcs/sources_1/new/custom_clock_divider.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>../custom_uart.srcs/sources_1/new/uart_module.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>../custom_uart.srcs/sources_1/new/uart_top_module.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_0783fec2</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -227,18 +214,6 @@
         <spirit:name>src/uart_top_module.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>../custom_uart.srcs/sources_1/new/custom_clock_divider.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>../custom_uart.srcs/sources_1/new/uart_module.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>../custom_uart.srcs/sources_1/new/uart_top_module.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -318,16 +293,16 @@
       <xilinx:displayName>custom_uart_module_v1_0</xilinx:displayName>
       <xilinx:definitionSource>package_project</xilinx:definitionSource>
       <xilinx:vendorDisplayName>University of Passau - Chair of Computer Engineering</xilinx:vendorDisplayName>
-      <xilinx:coreRevision>2</xilinx:coreRevision>
+      <xilinx:coreRevision>5</xilinx:coreRevision>
       <xilinx:upgrades>
         <xilinx:canUpgradeFrom>user.org:user:UART_top_module:1.0</xilinx:canUpgradeFrom>
       </xilinx:upgrades>
-      <xilinx:coreCreationDateTime>2023-04-05T06:48:25Z</xilinx:coreCreationDateTime>
+      <xilinx:coreCreationDateTime>2023-04-05T07:27:56Z</xilinx:coreCreationDateTime>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2022.1</xilinx:xilinxVersion>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="3bd0424b"/>
-      <xilinx:checksum xilinx:scope="ports" xilinx:value="9c812d60"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="69d2bc68"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="9a728c0c"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="0ddbd28b"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="fa061c3e"/>
     </xilinx:packagingInfo>
