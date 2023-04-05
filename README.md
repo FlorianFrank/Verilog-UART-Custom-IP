@@ -1,6 +1,7 @@
 ### Custom UART module
 
 This repository contains a raw UART module implemented in Verilog. 
+**Currently only sending from the FPGA is supported. The implementation of the rx direction will follow soon**
 
 ## 1. Interface 
 It provides the following input and output connections: 
