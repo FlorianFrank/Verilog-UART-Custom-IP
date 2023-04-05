@@ -48,8 +48,8 @@ module test_bench ();
       .DATA_LENGTH(DATA_LENGTH)
   ) test_module (
       .value(value),
-      .start_signal(start),
-      .clk_100MHZ(clk),
+      .start(start),
+      .clk(clk),
       .UartRx(rx),
       .UartTx(tx),
       .active(active),

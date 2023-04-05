@@ -18,11 +18,13 @@ module UART_top_module #(
     parameter STOPBITS = 1,
     parameter PARITY = 0
 ) (
+    input wire clk,
+    input wire start,
     input wire [7:0] value,
-    input wire start_signal,
-    input wire clk_100MHZ,
+    
     input wire UartRx,
     output wire UartTx,
+    
     output reg active,
     output reg ready
 );
@@ -63,7 +65,7 @@ module UART_top_module #(
       .PARITY(PARITY),
       .DATA_LENGTH(DATA_LENGTH)
   ) uart_module (
-      .clk_in(clk_100MHZ),
+      .clk_in(clk),
       .rx(UartRx),
       .tx(UartTx),
       .data(value_reg),
@@ -79,13 +81,13 @@ module UART_top_module #(
   end
 
 
-  always @(posedge clk_100MHZ) begin
+  always @(posedge clk) begin
     case (current_state)
 
       START_SENDING: begin
         ready  <= 0;
         active <= 0;
-        if (start_signal == 1) begin
+        if (start == 1) begin
           value_reg <= value;
           start_sending <= 1;
           current_state <= WAIT_FOR_FINISHED_HIGH;
