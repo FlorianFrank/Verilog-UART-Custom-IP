@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <spirit:component xmlns:xilinx="http://www.xilinx.com" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <spirit:vendor>seceng.fim.uni-passau.de</spirit:vendor>
-  <spirit:library>custom_uart_library</spirit:library>
-  <spirit:name>custom_uart_library</spirit:name>
+  <spirit:library>custom_uart_module</spirit:library>
+  <spirit:name>custom_uart_module</spirit:name>
   <spirit:version>1.0</spirit:version>
   <spirit:model>
     <spirit:views>
@@ -18,7 +18,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>8ccde147</spirit:value>
+            <spirit:value>e5da25ad</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -34,7 +34,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>8ccde147</spirit:value>
+            <spirit:value>e5da25ad</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -197,6 +197,19 @@
         <spirit:userFileType>CHECKSUM_0783fec2</spirit:userFileType>
         <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
       </spirit:file>
+      <spirit:file>
+        <spirit:name>../custom_uart.srcs/sources_1/new/custom_clock_divider.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../custom_uart.srcs/sources_1/new/uart_module.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../custom_uart.srcs/sources_1/new/uart_top_module.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>CHECKSUM_0783fec2</spirit:userFileType>
+      </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
       <spirit:name>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:name>
@@ -215,11 +228,23 @@
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
       </spirit:file>
+      <spirit:file>
+        <spirit:name>../custom_uart.srcs/sources_1/new/custom_clock_divider.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../custom_uart.srcs/sources_1/new/uart_module.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../custom_uart.srcs/sources_1/new/uart_top_module.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
       <spirit:name>xilinx_xpgui_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>xgui/custom_uart_library_v1_0.tcl</spirit:name>
+        <spirit:name>xgui/custom_uart_module_v1_0.tcl</spirit:name>
         <spirit:fileType>tclSource</spirit:fileType>
         <spirit:userFileType>CHECKSUM_8b78266f</spirit:userFileType>
         <spirit:userFileType>XGUI_VERSION_2</spirit:userFileType>
@@ -290,18 +315,18 @@
       <xilinx:taxonomies>
         <xilinx:taxonomy>/UserIP</xilinx:taxonomy>
       </xilinx:taxonomies>
-      <xilinx:displayName>custom_uart_library_v1_0</xilinx:displayName>
+      <xilinx:displayName>custom_uart_module_v1_0</xilinx:displayName>
       <xilinx:definitionSource>package_project</xilinx:definitionSource>
       <xilinx:vendorDisplayName>University of Passau - Chair of Computer Engineering</xilinx:vendorDisplayName>
-      <xilinx:coreRevision>1</xilinx:coreRevision>
+      <xilinx:coreRevision>2</xilinx:coreRevision>
       <xilinx:upgrades>
         <xilinx:canUpgradeFrom>user.org:user:UART_top_module:1.0</xilinx:canUpgradeFrom>
       </xilinx:upgrades>
-      <xilinx:coreCreationDateTime>2023-04-05T06:44:25Z</xilinx:coreCreationDateTime>
+      <xilinx:coreCreationDateTime>2023-04-05T06:48:25Z</xilinx:coreCreationDateTime>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2022.1</xilinx:xilinxVersion>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="e39282a2"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="3bd0424b"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="9c812d60"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="0ddbd28b"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="fa061c3e"/>
